@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+body {
+    background-color: #1A0B2E;
+   
+}
+/* shared styles */
+.btn-gradient{
+     border: none;
+     border-radius: 10000px;
+     cursor: pointer;
+     color: white;
+     font-size: 1rem;
+     font-weight: 600;
+     padding: 0.5rem 1.5rem;
+     background: linear-gradient(
+        90deg,
+        #ffb347,
+        #ff5acd,
+        #8a2be2
+    );
+    
+}
+
+/* header styles */
+.header {
+    width: 100%;
+    background-color: #1A0B2E;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: #ffffff33;
+    margin: 0;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo .wave {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(50deg,
+            #F7E93F,
+            #FB09B4,
+            #9100F8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* hero secton */
+.hero-section {
+    background: url(./assets/hero-bg.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section2{
+    margin: 8rem 0;
+}
+.mic-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.microphone{
+    position: absolute;
+    
+}
+.new{
+    position: absolute;
+    top: 10px;
+    right: 8rem;
+    background-color: #00FF88;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    border: none;
+    box-shadow: #00000033 0px 4px 6px -1px, #0000001a 0px 2px 4px -1px;
+}
+
+.hero-content {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 5rem;
+}
+.hero-content h2{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.hero-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffffd7;
+    margin-bottom: 2rem;
+    display: flex;
+   
+}
+.btn-gradient2{
+    border: 1px solid #00FF88;
+    border-radius: 10000px;
+    cursor: pointer;
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+   background: #1A0B2E;
+}
+.spotify{
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+   display: inline-flex;
+   align-items: center;
+   margin: 0 1rem;
+   
+}
+/* main section */
+main{
+    background: #1A0B2E;
+    margin-top: 3rem;
+
+}
+.about-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.about-title{
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.about-section p{
+    text-align: center;
+    color: #ffffffd1;
+    font-size: 1rem;
+    font-weight: 400;
+    /* margin-bottom: 10rem; */
+    line-height: 1.5;
+    max-width: 50rem;
+    margin-bottom: 4rem;
+}
+.about-card-container{
+
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2rem;
+ justify-content: space-around;
+ margin-top: 2rem;
+ /* margin: 2rem auto 2rem auto; */
+ 
+}
+.card-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #00FF88;
+}
+.card p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffffd1;
+    line-height: 1.5;
+   
+}
+.card{
+    margin: 3rem auto;
+}
+/* tech section  */
+.tech-section{
+   background: #230E3D;
+   margin: 3rem 0;
+}
+.tech-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: space-around;
+    margin: 3rem;
+    align-content: center;
+}
+.row-card{
+    grid-row: span 2;
+  
+}
+.col-card{
+    grid-column: span 2;
+}
+.tech-card{
+    border: none;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    background: rgba(53, 17, 101, 0.4);
+ align-content: center;
+    
+}
+.tech-card h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    color: #ffffff;
+}
+.tech-card p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffffd1;
+    line-height: 1.5;
+}
+.tech-title{
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    top: 1.5rem;
+
+}
