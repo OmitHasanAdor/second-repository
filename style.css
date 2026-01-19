@@ -39,6 +39,11 @@ body {
     padding: 1rem 2rem;
 }
 
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
 hr {
     border: none;
     height: 1px;
@@ -52,7 +57,8 @@ hr {
     font-weight: 700;
 }
 
-.logo .wave {
+.logo .wave,
+.footer-logo .wave {
     font-size: 1.8rem;
     font-weight: 700;
     background: linear-gradient(50deg,
@@ -79,6 +85,8 @@ hr {
 /* hero secton */
 .hero-section {
     background: url(./assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +94,8 @@ hr {
 }
 
 .hero-section2 {
-    margin: 8rem 0;
+    /* margin: 8rem 0; */
+    margin-top: 3rem;
 }
 
 .mic-section {
@@ -169,6 +178,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .about-title {
@@ -196,8 +206,10 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     justify-content: space-around;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     /* margin: 2rem auto 2rem auto; */
+    max-width: 75%;
+    margin: 2rem auto 4rem auto;
 
 }
 
@@ -227,11 +239,12 @@ main {
 }
 
 .tech-container {
+    max-width: 75%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     justify-content: space-around;
-    margin: 3rem;
+    margin: 0 auto;
     align-content: center;
     padding: 2rem 0;
 }
@@ -281,8 +294,9 @@ main {
     top: 1.5rem;
 
 }
+
 /* featured cont */
-.feature h3{
+.feature h3 {
     text-align: center;
     color: #ffffff;
     font-size: 3rem;
@@ -296,15 +310,17 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     justify-content: space-around;
-    margin: 3rem;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .feature-card {
     border: none;
     border-radius: 2.5rem;
-    background: #250D44;
+    background: #230E3D;
     align-content: center;
-  
+
+
 }
 
 .feature-card iframe {
@@ -313,7 +329,9 @@ main {
     border-top-right-radius: 2rem;
     width: 100%;
 
+
 }
+
 .feature-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -321,6 +339,7 @@ main {
     color: #ffffff;
     text-align: start;
 }
+
 .feature-card p {
     font-size: 1rem;
     font-weight: 400;
@@ -330,10 +349,317 @@ main {
     text-align: start;
 
 }
-.feature .feature-cont .feature-card .time{
+
+.feature .feature-cont .feature-card .time {
     font-size: 1rem;
     font-weight: 700;
     color: #00FF88;
     margin: 1rem;
-   align-items: center;
+    align-items: center;
+}
+
+/* host section  */
+.host-section {
+    background: #1A0B2E;
+    margin: 3rem 0;
+
+}
+
+.host-section>h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.host-cont {
+    background: #230E3D;
+    border: none;
+    border-radius: 2.5rem;
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.host-details h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.host-details p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffffd1;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+
+}
+
+.host-icon-cont {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon {
+    border: 2px solid #ffffff33;
+    border-radius: 50%;
+}
+
+.icon img {
+    padding: 0.5rem;
+    width: 2.25rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+/* footer section */
+.footer-banner {
+    background: url(./assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+.footer-logo h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.footer-logo .wave {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.footer-icon-cont {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.footer-icon p {
+    color: #ffffffc7;
+    font-size: 1rem;
+}
+
+.footer-content p {
+    color: #ffffff99;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+/* responsive design  */
+
+
+@media (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+    }
+
+    #btn {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .hero-section {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 2rem 1rem;
+        height: 15rem;
+    }
+
+    .mic-section .circle {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .mic-section {
+        position: relative;
+        /* margin: 1rem;
+        padding: 1rem; */
+        margin-top: 5rem;
+    }
+
+
+    .microphone {
+        width: 4rem;
+        /* height: 4rem; */
+
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0 1rem;
+    }
+
+    .hero-content p {
+        margin-bottom: 0.5rem;
+
+    }
+
+    .spotify {
+
+        padding: 0.75rem;
+        gap: 0.75rem;
+        display: inline-flex;
+        margin: 0 0.75rem;
+        display: inline-block;
+
+    }
+
+    .about-card-container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 90%;
+    }
+
+    .hero-content {
+        margin-top: 1rem;
+    }
+
+    .new {
+        right: 4rem;
+        top: 1.5rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 7rem;
+    }
+
+    .about-section p {
+        margin-bottom: 1rem;
+    }
+
+    .tech-container {
+        max-width: 95%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.75rem;
+        /* justify-content: space-around;
+    margin: 0 auto;
+    align-content: center;
+    padding: 2rem 0; */
+    }
+
+    .card-title,
+    .feature h3,
+    .tech-title , .footer-logo .wave , .footer-logo h1{
+        font-size: 2rem;
+    }
+
+    .tech-card h3,
+    .feature-card h3x,
+    .host-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-cont {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+
+        max-width: 95%;
+    }
+
+    .host-section>h2 {
+
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .host-cont {
+        background: #230E3D;
+        border: none;
+        border-radius: 2.5rem;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .host-details {
+        text-align: center;
+        align-content: center;
+    }
+
+    .host-icon-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-banner {
+        background: url(./assets/footer-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       min-height: 400px; 
+        height: auto;
+        width: 100%;
+        display: block;
+       margin-top: 3rem;
+        padding: 4rem 1rem;
+    }
+
+
+.footer-content {  
+    padding-bottom: 1rem;
+}
+.footer-content p {
+    margin: 1rem;
+}
 }
