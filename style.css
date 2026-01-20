@@ -307,7 +307,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     justify-content: space-around;
-    max-width: 75%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -471,6 +471,20 @@ main {
     color: #ffffff99;
     font-size: 1rem;
     margin: 1rem 0;
+}
+
+/* animation secton  */
+.allbtn:active{
+    animation: allbtn 0.3s ease-in-out infinite alternate;
+}
+@keyframes allbtn {
+    from {
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.15);
+    }
+    
 }
 
 /* responsive design  */
