@@ -475,7 +475,6 @@ main {
 
 /* responsive design  */
 
-
 @media (max-width: 576px) {
     .menu {
         display: none;
@@ -549,6 +548,11 @@ main {
         /* display: inline-block; */
 
     }
+    .btn-container{
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem auto;
+    }
 
     .about-card-container {
 
@@ -566,8 +570,8 @@ main {
     }
 
     .new {
-        right: 4rem;
-        top: 1.5rem;
+        right: 3.5rem;
+        top: 1rem;
     }
 
     .about-title {
