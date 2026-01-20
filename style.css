@@ -106,6 +106,9 @@ hr {
     position: absolute;
 
 }
+.hero-section2{
+    margin-top: 3rem;
+}
 
 .new {
     position: absolute;
@@ -525,6 +528,9 @@ main {
         width: 12rem;
         height: 12rem;
     }
+    .hero-section2{
+    margin-top: 0.5rem;
+}
 
     .mic-section {
         position: relative;
