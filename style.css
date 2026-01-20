@@ -456,6 +456,7 @@ main {
 .footer-icon-cont {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
 }
 
 .footer-icon {
@@ -698,6 +699,7 @@ main {
     .footer-content p , .footer-copy {
         font-size: 0.875rem;
         margin: 0.5rem 0;
+        text-align: center;
     }
 
     .footer-icon-cont {
