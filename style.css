@@ -499,10 +499,15 @@ main {
     }
 
     .hamburger-icon {
-        display: block;
+        display: inline-block;
         position: absolute;
-        top: 1rem;
+        /* top: 1rem; */
         right: 3rem;
+    }
+    .mobileNav{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
     }
 
     #btn {
