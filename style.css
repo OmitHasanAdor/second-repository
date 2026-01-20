@@ -84,7 +84,7 @@ hr {
 
 /* hero secton */
 .hero-section {
-    background: url(./assets/hero-bg.png);
+    background: url('./assets/hero-bg.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -93,10 +93,7 @@ hr {
     align-items: center;
 }
 
-.hero-section2 {
-    /* margin: 8rem 0; */
-    margin-top: 3rem;
-}
+
 
 .mic-section {
     display: flex;
@@ -141,7 +138,6 @@ hr {
     font-weight: 400;
     color: #ffffffd7;
     margin-bottom: 2rem;
-    display: flex;
 
 }
 
@@ -173,12 +169,12 @@ main {
 
 }
 
-.about-section {
+.t {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .about-title {
@@ -328,7 +324,7 @@ main {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     width: 100%;
-
+    aspect-ratio: 16 / 9;
 
 }
 
@@ -422,7 +418,7 @@ main {
 
 /* footer section */
 .footer-banner {
-    background: url(./assets/footer-bg.png);
+    background: url('./assets/footer-bg.png');
     background-size: cover;
     background-position: center;
     margin-top: 2rem;
@@ -502,8 +498,9 @@ main {
         background-position: center;
         background-repeat: no-repeat;
         width: 100%;
-        padding: 2rem 1rem;
-        height: 15rem;
+        padding: 1rem 1rem;
+        /* min-height: 15rem;
+        height: auto; */
     }
 
     .mic-section .circle {
@@ -544,7 +541,7 @@ main {
         gap: 0.75rem;
         display: inline-flex;
         margin: 0 0.75rem;
-        display: inline-block;
+        /* display: inline-block; */
 
     }
 
@@ -571,7 +568,7 @@ main {
     .about-title {
         font-size: 2rem;
         font-weight: 700;
-        margin-top: 7rem;
+        /* margin-top: 1rem; */
     }
 
     .about-section p {
@@ -591,12 +588,14 @@ main {
 
     .card-title,
     .feature h3,
-    .tech-title , .footer-logo .wave , .footer-logo h1{
+    .tech-title,
+    .footer-logo .wave,
+    .footer-logo h1 {
         font-size: 2rem;
     }
 
     .tech-card h3,
-    .feature-card h3x,
+    .feature-card h3,
     .host-details h2 {
         font-size: 1.5rem;
     }
@@ -643,23 +642,27 @@ main {
     }
 
     .footer-banner {
-        background: url(./assets/footer-bg.png);
+        /* background: url(./assets/footer-bg.png); */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-       min-height: 400px; 
-        height: auto;
-        width: 100%;
-        display: block;
-       margin-top: 3rem;
-        padding: 4rem 1rem;
+        min-height: 35rem;
+        display: flex;
+        align-items: center;
+        /* display: block; */
+        /* margin-top: 3rem; */
+        /* padding: 4rem 1rem; */
+        position: relative;
     }
 
 
-.footer-content {  
-    padding-bottom: 1rem;
-}
-.footer-content p {
-    margin: 1rem;
-}
+    .footer-content {
+        padding-bottom: 1rem;
+        position: relative;
+        top: 2rem;
+    }
+
+    .footer-content p {
+        margin: 1rem;
+    }
 }
